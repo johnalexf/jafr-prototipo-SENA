@@ -1,0 +1,170 @@
+
+/* Paleta de colores
+#112355
+#1EA6B1
+#CDCDCD 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Estilo de letra seleccionado para la app JAFR */
+    margin: 0px; /* Elimina el margen por defecto de todos los elementos poniendolo en 0px pixeles */
+    background-color: #CDCDCD; /* Le da el color de fondo al body */
+}
+
+/* Si quieres que tus títulos también la tengan */
+h1, h2, h3, h4, h5, h6, button{
+     margin: 0px; /* Elimina el margen por defecto de los encabezados poniendolo en 0px pixeles */
+     color: #112355; /* Asigna el color #112355 a todos los encabezados */
+}
+
+.pruebaDistribucion{
+    border: solid 5px red;
+}
+
+header {
+    margin: 6px 0px; /* Asigna un margen arriba y abajo de 6px y a los lados de 0px */
+    padding: 0px;/* Le da un espacio interno */
+    background-color: white;
+    display: grid;
+    /* Con este comando podemos decirle que dentro del div se maneje cada etiqueta principal con una división dentro del div que se acomode a la necesidad de distribución*/
+    grid-template-columns: 1fr 4fr 1fr;
+    /* Con esto estamos diciéndole al div que divida el contenido en tres columnas en donde la primera va ocupar un espacio del 16.6% de la pantalla, la segunda de un espacio del 66,4% y la tercera del 16.6% hablando del ancho */
+    justify-items: center;/* Alinia los elementos internos de forma horizontal es decir en el eje y*/
+    align-items: center;/* Alinia los elementos internos de forma vertical es decir en el eje x*/
+}
+
+.logo{
+    width: 130px;/* Ancho definido en 150px */
+    height: auto;/* Al asignar el alto en automatico se garantiza que la proporcion original de la imagen se mantenga */
+}
+
+.rolUsuario {
+    border: solid 2px black;
+    border-radius: 10px;
+    padding : 10px;
+    background-color: #CDCDCD ;
+}
+
+main {
+    margin: auto; /* Centra el main horizontalmente */
+    width: 1200px;
+    padding: 5px 50px;
+    height: 80vh;/* Ocupa un 80 porciento del alto de la pantalla */
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    justify-items: center;
+    
+}
+
+.perfilUsuario, .menuNavegacion {
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: white ;
+    text-align: center;
+}
+
+.perfilUsuario{
+    padding: 0px 50px;
+    width: 400px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center; /* Alinea los elementos de la lista en el centro verticalmente */
+}
+
+.datosUsuario{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: start; /*  Alinea los elementos hacia la izquierda */
+    gap: 30px;/* Da un espacio entre los elementos de la grilla */
+}
+
+.codigoAcceso{
+    display: flex;
+    flex-direction: column; /* Uno debajo del otro */
+    gap: 15px; /* Da un espacio entre los elementos */
+}
+
+
+.codigoAccesoeInformacion, .codigoAccesoCopiar{
+    display: flex;
+    flex-direction: row; /* Uno al lado del otro */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 10px; /* Da un espacio entre los elementos */
+}
+
+.codigoAccesoCopiar{
+    border: solid 2px black;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+iconify-icon {
+    font-size: 26px; /* Tamaño del icono */
+    color: #112355; /* Color del icono */
+}
+
+.iconoPregunta {
+    font-size: 30px; /* Tamaño del icono */
+}
+
+.opcionesPerfil{
+    display: flex;
+    flex-direction: row; /* Uno debajo del otro */
+    justify-content: space-between; /* Da un espacio entre los elementos */
+}
+
+.opcionesPerfil button{
+    border: solid 0px black;
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: 700; /* Asigna una negrita de fuente de 400 a los botones */
+}
+
+.menuNavegacion{
+    width: 350px;
+    padding: 0px;
+}
+
+
+
+nav {
+    height: 100%;
+}
+
+ul {
+    height: 100%;
+    list-style: none; /* Elimina los puntos de las listas */
+    margin: 0px;
+    padding: 0px; /* Elimina el espacio interno de las listas */
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center; /* Alinea los elementos de la lista en el centro verticalmente */
+}
+
+
+
+li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    display: flex;
+    flex-direction: row; /* Uno al lado del otro */
+    align-items: center; /* ¡ESTO es lo que los centra verticalmente! */
+    justify-content: center;
+    gap: 10px;
+}
+
+footer {
+    margin: 6px 0px; /* Asigna un margen arriba y abajo de 6px y a los lados de 0px */
+    padding: 8px 0px;/* Le da un espacio interno */
+    background-color: white;
+    text-align: center;
+}
+
