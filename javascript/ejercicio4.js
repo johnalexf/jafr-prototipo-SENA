@@ -83,7 +83,7 @@ while(!salir){
         case "2":
             var resumenListaPersonas = "";
             for(var i = 0 ; i < personasEntrevistadas.length ; i++){
-                resumenListaPersonas = `\n 0 .  ${personasEntrevistadas[i].nombre}`
+                resumenListaPersonas += `\n 0 .  ${personasEntrevistadas[i].nombre}`
             }
             var opcionVerPersona = prompt(`
                 Seleccione de la siguiente lista la persona que desea ver su informacion registrada:
